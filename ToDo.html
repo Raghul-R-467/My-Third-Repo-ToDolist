@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <link rel="stylesheet" href="ToDo.css">
+</head>
+<body>
+
+    <section class="TODO">
+        <!-- ......................... nav ......................... -->
+        <nav class="todonav">
+            ToDo
+        </nav>
+
+        <!-- ......................... main ......................... -->
+        <div class="mainelement">
+            <div class="list-box">
+                <h1>A Story</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente veniam necessitatibus ullam, pariatur aliquam possimus aut facere recusandae quos cumque, voluptatum corrupti ratione ad, ab inventore adipisci error quibusdam laborum.</p>
+                <button onclick="listremove(event)">Delete</button>
+            </div>
+        </div>
+
+        <!-- ......................... popup button ......................... -->
+        <div class="showbtn">
+            <button onclick="show()">+</button>
+         </div>
+
+        <!-- ......................... popup ......................... -->
+        <div class="popupbg"></div>
+        <div class="popup">
+            <label class="popupinstruct">Type your list here .....</label><br>
+            <input id="popuptit" class="popuptit" type="text" placeholder="Title"><br>
+            <textarea id="description" class="description" rows="5" placeholder="Description"></textarea><br>
+            <div class="popupbtn">
+                <button id="close" type="submit">Close</button>
+                <button id="add">Add</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="ToDo.js"></script>
+</body>
+</html>
